@@ -1,0 +1,14 @@
+{
+    "name": "gongjieqi/laravel-chat",
+    "description": "message server base on workman",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jieqi Gong",
+            "email": "232183495@qq.com"
+        }
+    ],
+    "require": {
+        "workerman/gateway-worker": "^3.0"
+    }
+}
