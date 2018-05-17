@@ -11,20 +11,23 @@
  * @link http://www.workerman.net/
  * @license http://www.opensource.org/licenses/mit-license.php MIT License
  */
-use \Workerman\Worker;
-use \Workerman\WebServer;
-use \GatewayWorker\Gateway;
-use \GatewayWorker\BusinessWorker;
-use \Workerman\Autoloader;
+use Workerman\Worker;
+use Workerman\WebServer;
+use GatewayWorker\Gateway;
+use GatewayWorker\BusinessWorker;
+use Workerman\Autoloader;
 
 // bussinessWorker 进程
 $worker = new BusinessWorker();
 // worker名称
-$worker->name = Config('chat.name');
+$worker->name = $config['name'];
+    //'my chat app';
 // bussinessWorker进程数量
-$worker->count = Config('chat.work_count');
+$worker->count = $config['work_count'];
+    //4;
 // 服务注册地址
-$worker->registerAddress = Config('chat.registerAddress');
+$worker->registerAddress = $config['registerAddress'];
+    //'127.0.0.1:1238';
 
 // 如果不是在根目录启动，则运行runAll方法
 if(!defined('GLOBAL_START')) {

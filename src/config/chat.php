@@ -20,9 +20,11 @@ return [
 
     'gateway_app' => 'my gateway app',
 
-    'socket' => 'websocket://0.0.0.0:8282',
+    'socket' => 'websocket://0.0.0.0',
 
     'start_port' => 4000,
+
+    'socket_port' => '8282',
     /*
     |--------------------------------------------------------------------------
     | User Model & Table
@@ -32,6 +34,8 @@ return [
     'user' => 'App\User',
 
     'user_table' => 'users',
+
+    'user_guard' => 'auth',
     /*
     |--------------------------------------------------------------------------
     | User Model & Table
@@ -41,4 +45,6 @@ return [
     'admin' => 'App\Admin',
 
     'admin_table' => 'admins',
+
+    'admin_guard' => 'admin',
 ];
