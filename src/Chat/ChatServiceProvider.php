@@ -22,8 +22,8 @@ class ChatServiceProvider extends ServiceProvider
             __DIR__ . '/lib/start_register.php' => app_path('/server/start_register.php'),
             __DIR__ . '/lib/Events.php' => app_path('/server/Events.php'),
             __DIR__ . '/lib/start.php' => app_path('/server/start.php'),
-            __DIR__. '/../views/chat/admin.blade.php' => resource_path('views/chat/admin.blade.php'),
-            __DIR__. '/../views/chat/user.blade.php' => resource_path('views/chat/user.blade.php')
+            __DIR__. '/../views/chat/chat.blade.php' => resource_path('views/chat/chat.blade.php'),
+            //__DIR__. '/../views/chat/user.blade.php' => resource_path('views/chat/user.blade.php')
         ]);
 
         $this->loadMigrationsFrom(__DIR__ . '/../migrations');

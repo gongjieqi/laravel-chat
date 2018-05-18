@@ -1,4 +1,4 @@
 <?php
 
 
-Route::get('/chat/bind', 'Gongjieqi\Controllers\ChatController@bind');
+Route::post('/chat/bind', 'Gongjieqi\Controllers\Chat\ChatController@bind')->name('chat-bind');

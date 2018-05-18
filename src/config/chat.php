@@ -20,7 +20,7 @@ return [
 
     'gateway_app' => 'my gateway app',
 
-    'socket' => 'websocket://0.0.0.0',
+    'socket_ip' => '0.0.0.0',
 
     'start_port' => 4000,
 
@@ -35,7 +35,7 @@ return [
 
     'user_table' => 'users',
 
-    'user_guard' => 'auth',
+    'user_guard' => 'web',
     /*
     |--------------------------------------------------------------------------
     | User Model & Table

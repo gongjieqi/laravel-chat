@@ -18,7 +18,7 @@ use \GatewayWorker\BusinessWorker;
 use \Workerman\Autoloader;
 
 // gateway 进程，这里使用Text协议，可以用telnet测试
-$gateway = new Gateway($config['socket'].':'.$config['socket_port']);
+$gateway = new Gateway('websocket://'.$config['socket_ip'].':'.$config['socket_port']);
 // gateway名称，status方便查看
 $gateway->name = $config['gateway_app'];
 // gateway进程数
