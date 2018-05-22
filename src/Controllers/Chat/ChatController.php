@@ -5,7 +5,7 @@
  * Date: 2018/5/16
  * Time: 11:41
  */
-namespace Gongjieqi\Controllers\Chat;
+namespace Gongjieqi\LaravelChat\Controllers\Chat;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Auth\Access\Gate;

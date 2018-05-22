@@ -6,7 +6,7 @@
  * Time: 8:51
  */
 
-namespace Gongjieqi\Command;
+namespace Gongjieqi\LaravelChat\Command;
 
 use Illuminate\Console\Command;
 use Workerman\Worker;

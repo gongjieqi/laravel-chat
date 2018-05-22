@@ -5,9 +5,9 @@
  * Date: 2018/5/15
  * Time: 13:55
  */
-namespace Gongjieqi\Chat;
-use Gongjieqi\Command\ChatInitCommand;
-use Gongjieqi\Command\ChatStartCommand;
+namespace Gongjieqi\LaravelChat\Chat;
+use Gongjieqi\LaravelChat\Command\ChatInitCommand;
+use Gongjieqi\LaravelChat\Command\ChatStartCommand;
 use Illuminate\Support\ServiceProvider;
 
 

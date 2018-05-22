@@ -1,6 +1,6 @@
 <?php
 
-namespace Gongjieqi\Command;
+namespace Gongjieqi\LaravelChat\Command;
 
 /**
  * This file is part of Entrust,
