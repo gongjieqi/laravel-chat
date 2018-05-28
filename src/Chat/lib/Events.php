@@ -38,7 +38,7 @@ class Events
         Gateway::sendToClient($client_id, json_encode(array(
             'type'      => 'init',
             'client_id' => $client_id,
-            'all_client'=> Gateway::getAllClientSessions()
+            'all_client'=> Gateway::getAllClientSessions(),
         )));
     }
     
@@ -58,8 +58,9 @@ class Events
    public static function onClose($client_id) {
        Gateway::sendToAll(
            json_encode(array(
-               'type' => 'reload',
-               'all_client'=> Gateway::getAllClientSessions()
+               'type' => 'offline',
+               'uuid'=> Gateway::getUidByClientId($client_id),
+               'client_id'=>$client_id,
            ))
        );
    }

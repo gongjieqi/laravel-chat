@@ -22,6 +22,8 @@ return [
 
     'socket_ip' => '0.0.0.0',
 
+    'socket_from_client_ip' => '192.168.10.10',
+
     'start_port' => 4000,
 
     'socket_port' => '8282',
@@ -36,9 +38,11 @@ return [
     'user_table' => 'users',
 
     'user_guard' => 'web',
+
+    'user_name_filed' => 'name',
     /*
     |--------------------------------------------------------------------------
-    | User Model & Table
+    | Admin Model & Table
     |--------------------------------------------------------------------------
     |
     */
@@ -47,4 +51,6 @@ return [
     'admin_table' => 'admins',
 
     'admin_guard' => 'admin',
+
+    'admin_name_filed'=> 'name'
 ];

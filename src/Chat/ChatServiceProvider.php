@@ -29,10 +29,10 @@ class ChatServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/../migrations');
 
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                ChatInitCommand::class,
-            ]);
-        }
+//        if ($this->app->runningInConsole()) {
+//            $this->commands([
+//                ChatInitCommand::class,
+//            ]);
+//        }
     }
 }
