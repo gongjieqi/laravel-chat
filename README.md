@@ -23,3 +23,5 @@
        接下来的就是对应后台用户的响应配置了
        
 5. 运行 php app/server/start.php start
+
+6. 将chat/chat.blade.php include到对应的模板文件里去
